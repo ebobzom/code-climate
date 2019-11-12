@@ -7,7 +7,7 @@ env:
     - CC_TEST_REPORTER_ID=da798c6484d3b717e6f05c3d9c639b4c9ee5cf61d05236131a0cdddb499e2577
 
 script:
-  - nyc --reporter=lcov yarn run test
+  - nyc yarn test
 
 after_success:
   yarn coverage

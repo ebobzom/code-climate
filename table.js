@@ -8,7 +8,7 @@ const con = new pg.Client({
     port: 5432,
   });
 con.connect();
-con.query('DROP table if exists users');
+con.query('DROP table if exists users;');
 con.query('create table users(id serial primary key not null, first_name varchar(50) not null, last_name varchar(50) not null;', () => {
   con.end(); 
 });
