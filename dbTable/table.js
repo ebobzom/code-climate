@@ -7,9 +7,9 @@ const con = new pg.Pool({
     password: 'woody4real',
     port: 5432,
   });
-con.query('DROP table if exists users5')
+con.query('DROP table if exists users')
 .then(ans => console.log('ok'))
 .catch(e => console.log(e))
-con.query('CREATE TABLE users5(id serial primary key not null, first_name varchar(50) not null, last_name varchar(50) not null)')
+con.query('CREATE TABLE users(id serial primary key not null, first_name varchar(50) not null, last_name varchar(50) not null)')
 .then(ans => console.log('ok'))
 .catch(e => console.log(e))
