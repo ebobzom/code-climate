@@ -31,15 +31,15 @@ app.post('/', (req,res) => {
 });
 
 // use this if you want to run server while your test is also running your test, else stop app running before testing
-// if(!module.parent){
-//     app.listen(port, () => {
-//         console.log('app running')
-//     })
-// }
+if(!module.parent){
+    app.listen(port, () => {
+        console.log('app running')
+    })
+}
 
-app.listen(port, () => {
-    console.log('app running')
-})
+// app.listen(port, () => {
+//     console.log('app running')
+// })
 
 
 module.exports = app;
