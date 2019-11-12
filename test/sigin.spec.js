@@ -6,7 +6,7 @@ const app = require('../server.js');
 chai.use(chaiHttp);
 
 describe('POST /', (done) => {
-    it('should have all required signin property', function settime(done){
+    it('should have all required signin property', function setTime(done){
         this.timeout(10000);
         chai.request(app)
           .post('/')
