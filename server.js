@@ -42,6 +42,6 @@ if(!module.parent){
 // })
 
 
-module.exports = app;
+export default app;
 
 

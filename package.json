@@ -6,7 +6,7 @@
   "author": "Elijah Bobzom <ebobzom@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --exit",
+    "test": "./node_modules/.bin/mocha -r esm --exit",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "table": "node -r esm ./dbTable/table.js"
   },
